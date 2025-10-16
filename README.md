@@ -22,4 +22,4 @@ This app can be used for **gaming**, **robotics control**, or any application re
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/virtual-gamepad-app.git
+git clone https://github.com/yourusername/virtual-gamepad-app.git](https://github.com/Sohankalburgi/VirtualJoystick.git
