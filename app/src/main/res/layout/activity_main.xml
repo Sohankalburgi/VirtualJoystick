@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="true"
+
+    android:background="#000000">
+
+    <!-- Up Button -->
+
+    <!-- Down Button -->
+
+    <Button
+        android:id="@+id/UpButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button"
+        android:text="U"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Left Button -->
+
+    <Button
+        android:id="@+id/RightBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rounded_button"
+        android:text="R"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/SquareButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/UpButton"
+        app:layout_constraintTop_toTopOf="@+id/UpButton" />
+
+    <Button
+        android:id="@+id/DownBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_button"
+        android:text="D"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/UpButton"
+        app:layout_constraintTop_toBottomOf="@+id/UpButton" />
+
+    <Button
+        android:id="@+id/LeftBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/rounded_button"
+        android:text="L"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/UpButton"
+        app:layout_constraintTop_toTopOf="@+id/UpButton" />
+
+    <!-- Right Button -->
+    <!-- RIGHT D-PAD (△ ○ ✖ □) -->
+
+    <Button
+        android:id="@+id/TriangleButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/rounded_button"
+        android:text="△"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CrossButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_button"
+        android:text="✖"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/SelectButton"
+        app:layout_constraintEnd_toEndOf="@id/TriangleButton"
+        app:layout_constraintTop_toBottomOf="@id/TriangleButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/SquareButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="□"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@id/TriangleButton"
+        app:layout_constraintTop_toTopOf="@id/TriangleButton" />
+
+    <Button
+        android:id="@+id/CircleButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rounded_button"
+        android:text="○"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/TriangleButton"
+        app:layout_constraintTop_toTopOf="@id/TriangleButton" />
+
+    <Button
+        android:id="@+id/SelectButton"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:text="Select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StartButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
